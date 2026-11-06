@@ -37,7 +37,7 @@ pub fn build(b: *Build) void {
     b.installArtifact(mbedtls);
 
     if (target.result.os.tag == .windows) {
-        mbedtls.root_module.linkSystemLibrary("bcrypt", .{});
+        mbedtls.root_module.linkSystemLibrary("bcrypt", .{ .use_pkg_config = .no });
     }
 
     const selftest = b.addExecutable(.{

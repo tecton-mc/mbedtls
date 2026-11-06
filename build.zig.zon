@@ -2,7 +2,7 @@
     .name = .mbedtls,
     .fingerprint = 0x841b00c247548313,
     .version = "3.6.6",
-    .minimum_zig_version = "0.15.1",
+    .minimum_zig_version = "0.17.0",
     .dependencies = .{
         .mbedtls = .{
             .url = "git+https://github.com/Mbed-TLS/mbedtls.git?ref=v3.6.6#0bebf8b8c7f07abe3571ded48a11aa907a1ffb20",
